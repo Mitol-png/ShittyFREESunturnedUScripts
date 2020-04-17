@@ -1,0 +1,17 @@
+//********************
+//*Vehicle-Cleaner	 *
+//*Made by Mitolpolo *
+//*Discord:Mitol#0477*
+//*					 *
+//********************
+
+event onInterval(120){
+	foreach(vehicle in vehicleManager.vehicles){
+	if(vehicle.isDriven==false){
+		vehicle.destroy(); 
+		} 
+	}
+      broadcast("Server: Empty vehicles erased","yellow",);		
+}
+
+
